@@ -1,0 +1,25 @@
+{
+  "name": "extract-fn",
+  "version": "1.0.0",
+  "description": "Extract function/method source code from JavaScript/TypeScript files",
+  "type": "module",
+  "main": "extract.js",
+  "bin": {
+    "extract-fn": "./extract.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0"
+  },
+  "keywords": [
+    "ast",
+    "function",
+    "extract",
+    "babel",
+    "javascript",
+    "typescript"
+  ]
+}
