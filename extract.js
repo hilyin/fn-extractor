@@ -218,8 +218,9 @@ export function extractFunction(filePath, functionName) {
   }
 }
 
-// CLI
-if (import.meta.url === fileURLToPath(new URL(import.meta.url)) || import.meta.url === `file://${process.argv[1]}`) {
+// CLI - run if this file is the main module
+const scriptName = path.basename(process.argv[1]);
+if (import.meta.url === `file://${process.argv[1]}` || scriptName === 'extract-fn' || scriptName === 'extract.js') {
   const args = process.argv.slice(2);
   if (args.length !== 2) {
     console.error('Usage: extract-fn <file-path> <function-name>');
