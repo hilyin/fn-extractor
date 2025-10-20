@@ -1,6 +1,6 @@
 # extract-fn
 
-A production-ready tool to extract function/method source code from JavaScript/TypeScript files using AST parsing.
+A tool to extract function/method source code from JavaScript/TypeScript files using AST parsing.
 
 ## Features
 
